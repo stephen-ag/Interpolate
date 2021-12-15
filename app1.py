@@ -66,7 +66,7 @@ def data():
             data1.to_excel('Static\Temp.xlsx')
             coll = pressure_data.columns.to_list()
             for col in pressure_data:
-                pressure_data[col] = pd.to_numeric(pressure_data[col], errors='coerce')
+                pressure_data[col] = pd.to_numeric(pressure_data[col], errors='coerce',downcast='float')
             data22 = pd.read_excel(filepath1, sheet_name='Interpolate_data', index_col='Time')
             # keep the data to be interpolated in sheet named Interpolate _data
             # make sure for data22 the excel has file name Interpolate_data and has 1st column with "Time"
