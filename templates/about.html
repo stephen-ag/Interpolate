@@ -33,10 +33,12 @@
   Index column should be named as 'Time' </p>
   <p>The Input sheet should contain row 2 starting with "Time" as shown in picture and sheet showing "Interpolate_data" where data is placed for which interpolation required.
   Make sure the row number 2 should contain the all column heading for which interpolation is required </p>
-     <a class="portfolio-box" >
+
         <!--<img src="Static/fig1.png" class="img-thumbnail" alt="Responsive image"  width ="400"> <br/><br/>-->
-        <img class="img-fluid" src="{{ url_for('static', filename='fig1.png') }}"  width ="400"> <br/><br/>
-        <img class="img-fluid" src="{{ url_for('static', filename='fig2.png') }}"  width ="400"> <br/><br/>
+        <img class="img-thumbnail" src="{{ url_for('static', filename='fig1.png') }}" alt="Responsive image"  width ="400"> <br/><br/>
+      <br/>
+        <img class="img-thumbnail" src="{{ url_for('static', filename='fig2.png') }}" alt="Responsive image" width ="400"> <br/><br/>
+      <br/>
    <p>A new excel sheet will be created with the lookup table and the interpolated values and saved as interpolated file.</p>
      <p>Select the input excel file using the Choose file button in the home page and submit the execute button, the output file will be saved </p>
 </div>
